@@ -1,0 +1,24 @@
+html { 
+    scroll-behavior: auto;
+    overflow-y: scroll; overflow-x:hidden;
+    /*font-family: 'Work Sans', sans-serif;*/
+  }
+  nav {
+    background-color: none;
+    padding: 1em;
+    text-align: center;
+  }
+  nav a {
+    color: black;
+    text-decoration: none;
+    padding-left: 40px;
+  }
+  nav a:hover{ /* Source code from: https://codepen.io/maheshambure21/pen/QwXaRw */
+    color: pink;
+  }
+  body {
+    background: url("images/BG.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
