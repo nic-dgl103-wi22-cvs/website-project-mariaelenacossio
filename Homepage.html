@@ -1,35 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="slideshow-home.js"></script>
+  <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/amys_logo.ico" type="image/x-icon"> <!--Client's logo-->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Work+Sans&display=swap" rel="stylesheet">
     <title>Beauty by Amy</title>
-    <!--Add logo of the page-->
 </head>
-<body>
-    <header>
-      <a href="Homepage.html"><img src="images/Amys-logo.png" alt="Beauty by Amy Logo, nails design" width="100"></a><!--Needs the header design of the tittle of the page-->
-    </header>
-    <!--Navigation bar with the the 4 pages available. Hover when you select it-->
-    <nav><!--Add class to the bar-->
-        <div class=""><!--Add style and responsiveness to the bar-->
-          <b><a href="Homepage.html">Home</a>
-             <a href="Catalog.html">Catalog</a>
-             <a href="About.html">About</a>
-             <a href="Contact.html">Contact Us</a>
-          </b>
+<body class="body-homepage">
+  <div class="wrap-container">
+   <nav class="navbar">
+     <div class="brand-title">
+     <a href="Homepage.html"><img src="images/Amys-logo.png" alt="Beauty by Amy Logo, nails design" width="100">Beauty by Amy</a>
+       <a href="Homepage.html" class="toggle-button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+       </a> 
+    </div>
+        <div class="navbar-links">
+            <ul>
+              <li><a href="Homepage.html">Home</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="About.html">About us</a></li>
+               <div class="contact-border">
+                <li><a href="Contact.html">Contact Us</a></li><!--Create a div for a round border over the contact us-->
+              </div>
+            </ul>
+         </div>
+  </nav>
+  </div>
+</div>
+  <main>
+    <div class="flex-container">
+    <div class="head-line">
+      <h1> Having your nails done</h1>
+      <h3>is one thing you can get into shape without exercise</h3>
+      <div class="caption-newsletter">Join our newsletter</div>
+      <div class="wrapper-button">
+              <input type="email" id="email" name="email" placeholder="example@domain.com" size="40" required>
+                 <div class="submit-button">
+                     <input type="submit" value="Submit">
+                 </div>
+      </div>
+      <div class="contactme-button">
+        <p>Book your appointment</p>
+          <a href="Contact.html">
+            <input type="submit" value="Contact me">
+          </a>
+      </div>
+    </div>
+    <aside class="aside-video">
+      <div class="video1">
+      <video src="images/AmyBanner.mp4" type="video/mp4" autoplay muted loop tittle="nails design by Amy">
+      </video>
+    </div>
+    <footer class="footer-video"><a href=https://www.instagram.com/beautybyamy000 target="_blank">
+      <img src="images/instagram-icon.ico" alt="Beauty by Amy, hand with pink nails, pink gradient" width="25"></a> Beauty by Amy</b></footer>
+    </footer>
+    </aside>
+  </div>
+     <section class="testimonials-banner"> <!--Banner to define a different secion of the page-->
+       <h1> Meet my clients</h1>
+     </section>    
+    <section class="flex-container">
+      <div class="item1">
+        <h3>Denisse C.</h3>
+        <div class="img-text">
+        <a href="https://www.instagram.com/p/CZctmlZPkR9/" target="_blank">
+          <img src="images/img-1.png" alt="pink nails, hearts, dark pink, square nails" width="250" height="250">
+        </a>
+        <p>"Beyond gorgeous. It's very modern and clean. Amy is the best nail technician I've ever had. "</p>
+      </div>
+    </div>
+      <div class="item2">
+        <h3>Luisa A.</h3>
+        <div class="img-text">
+        <a href="https://www.instagram.com/p/CZcthIePoOd/" target="_blank">
+          <img src="images/img-2.png" alt="nude nails, mushrooms, nude pink, almond shape nails" width="250" height="250">
+        </a>
+        <p>"Every visit is always a wonderful experience with Amy. 
+          She's creates beautiful designs."</p>
+      </div>
+    </div>
+      <div class="item3">
+        <h3>Mariaelena C.</h3>
+      <div class="img-text">
+        <a href="https://www.instagram.com/p/CKRyVUml2ib/" target="_blank">
+          <img src="images/Nails-5.png" alt="nude nails, mushrooms, nude pink, almond shape nails" width="250" height="250">
+        </a>
+        <p>"Best nail technician in the state. I will never go anywhere else ever again. You have a lifetime customer in me!."</p>
         </div>
-      </nav>
-    <main>
+      </div>
+    </section>
+    <footer class="footer-home"><a href="Homepage.html">
+      <img src="images/amys_logo.ico" alt="Beauty by Amy, hand with pink nails, pink gradient" width="25"></a>&copy;MCC, Inc. <b> Privacy policy and
+      and Terms of use</b></footer>
 
-        <!--Add background image to set the identity of the client-->
-        <!--Client Profile Photo on the left upper side of the page, next to it clients "quote"-->
-        <p>"A girl without beautiful <strong>nails</strong> is like a night without stars"</p><!--Client's quote-->
-        <!--Section below "quote" insert a box with a brief description of her business -->
-        <!--Below the previous information, insert a gallery with her most recent work as well, it must scroll to the left-->
+    
+  
+  
+
+    
+  
+    <!--<article>
+        <p>"A girl without beautiful <strong>nails</strong> is like a night without stars"</p>
+      </article>-->
     </main>   
 </body>
 <!--Footer specifying that it's for education purposes-->
