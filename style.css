@@ -71,7 +71,7 @@ html {
     color: white;
   
   }
-  h1 {
+  .head-line h1 {
     font-size: 3rem;
     font-weight: bolder;
     color: white;
@@ -136,6 +136,12 @@ html {
     flex-direction: column;
     padding: 0;
   }
+  .wrapper-form h2 {
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #FF8FA3;
+  }
   
   .toggle-button {
     position: absolute;
@@ -185,9 +191,27 @@ html {
   }
   
   input[type="submit"]:hover {
-    background-color: rgba(201, 24, 74, 0.3);
-    border: 1px rgba(201, 24, 74, 0.3);
+    background-color: white;
+    border: 1px #FFB3C1;
+    color: #FFB3C1;
   } 
+
+  input[type="reset"] {
+    background-color: white;
+    color: #FFB3C1;
+    padding: 15px 20px;
+    border: 1px #FFB3C1;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  input[type="reset"]:hover {
+    background-color: #FFB3C1;
+    border: 1px rgba(201, 24, 74, 0.3);
+    color: white;
+  }
   
   .wrapper-button {
     display: inline-flex;
@@ -224,7 +248,35 @@ html {
   .contactme-button a{
     text-decoration: none;
   }
-  
+
+  .contact-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 1rem;
+  padding-left: .5rem;
+  line-height: 1px;
+  color: #FF8FA3;
+  }
+
+  .contact-headline h1 {
+    text-align: center;
+    font-size: 2rem;
+
+  }
+
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .location-info h3 {
+    text-align: center;
+    color: #FFB3C1;
+    font-size: 2rem;
+  }
   .submit-button input{
     margin-left: 1rem;
   }
@@ -359,6 +411,151 @@ html {
   border-radius: 5px;
   color: white;
 }
+
+
+.price-list
+.contact-form {
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+
+.price-list
+.contact-form {
+  text-align: center;
+}
+
+/*.contact-form*/
+.price-list {
+  display: inline-block;
+  padding: 20px 5px;
+}
+
+.price-list h2 {
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  padding-top: 10px;
+}
+/* ===============
+     STRUCTURE
+     =============== */
+  
+  
+     .wrapper-form {
+      background-color: rgba(201, 24, 74, 0.10);
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .wrapper-button {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    /* ===============
+       FORM CONTROLS
+       =============== */
+    
+    input,
+    select,
+    textarea {
+      font-size: 1em;
+    }
+    
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    textarea {
+      font-family: 'Open Sans', sans-serif;;
+    }
+    
+    fieldset {
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-evenly ;
+    }
+    
+    .label-required {
+      font-size: 0.8rem;
+      color: #800f2f;
+    }
+
+    table {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    caption {
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: #FF8FA3;
+      color: white;
+    }
+    
+    tr:nth-child(2),
+    tr:nth-child(5),
+    tr:nth-child(8) {
+      background-color: rgba(201, 24, 74, 0.10);
+    }
+    
+    tbody tr:hover {
+      background-color: rgba(139, 0, 139, 0.35);
+      color: white;
+    }
+    
+    td.merge {
+      text-align: center;
+      font-style: italic;
+    }
+    
+    tfoot {
+      font-size: 0.8em;
+      font-style: italic;
+      text-align: center;
+      background-color: #FF8FA3;
+    }
+
 
   
   
