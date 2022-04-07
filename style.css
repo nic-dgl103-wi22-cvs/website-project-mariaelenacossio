@@ -648,7 +648,7 @@ html {
     }
 /*---------------------------------------------------Media Responsiveness----------------------------------------------------------------*/
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
     .toggle-button {
       display: flex;
     }
@@ -689,7 +689,7 @@ html {
     align-items: center;
     width: 100%;
    }
-   .head-line h1{
+   .head-line{
      text-align: center;
    }
    .flex-container h1,
@@ -714,10 +714,10 @@ html {
      flex-direction: column;
      align-items: center;
    }
- 
-  
 
-   
+   .headline-about {
+     display: flex;
+   }
   }
 
   
