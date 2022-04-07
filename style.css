@@ -246,7 +246,7 @@ html {
   margin: 1rem;
   padding-left: .5rem;
   line-height: 1px;
-  color: #FF8FA3;
+  color: white;
   }
 
   .contact-headline h1 {
@@ -715,9 +715,6 @@ html {
      align-items: center;
    }
 
-   .headline-about {
-     display: flex;
-   }
   }
 
   
