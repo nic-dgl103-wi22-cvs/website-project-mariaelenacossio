@@ -1,7 +1,6 @@
 html { 
     scroll-behavior: auto;
     overflow-y: scroll; overflow-x:hidden;
-    /*font-family: 'Work Sans', sans-serif;*/
   }
   * {
     box-sizing: border-box;
@@ -377,7 +376,6 @@ html {
   .services-item3 {
   background-color: white;
   border: 2px solid #FFB3C1;
-  /*border-radius: 50%;*/
   padding: 15px;
   width: calc(33.33% - 30px);
   box-sizing: border-box;
@@ -535,11 +533,7 @@ html {
 .headline-about h3 {
   line-height: 35px;
 }
-/* ===============
-     STRUCTURE
-     =============== */
-  
-  
+
      .wrapper-form {
       background-color: rgba(201, 24, 74, 0.10);
       padding: 20px;
@@ -552,10 +546,7 @@ html {
       justify-content: space-between;
     }
     
-    /* ===============
-       FORM CONTROLS
-       =============== */
-    
+    /*------------------------------------------------------------Form Controls-----------------------------------------------------------*/
     input,
     select,
     textarea {
@@ -602,10 +593,12 @@ html {
       color: #800f2f;
     }
 
+    /*---------------------------------------------------Table---------------------------------------------------------------------*/
     table {
-      font-family: Arial, Helvetica, sans-serif;
-      width: 100%;
-      border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
     }
     
     caption {
@@ -651,17 +644,9 @@ html {
       text-align: center;
       background-color: #FF8FA3;
     }
+/*---------------------------------------------------Media Responsiveness----------------------------------------------------------------*/
 
-
-  
-  
-  
-
-
-
-  
-
-  @media (max-width: 400px) {
+@media (max-width: 400px) {
     .toggle-button {
       display: flex;
     }
@@ -692,6 +677,12 @@ html {
     .navbar-links .active {
       display: flex;
     }
+
+    .head-line h1,
+    .head-line h3{
+    flex-direction: column;
+    align-items: flex-start;
+   }
   }
 
   
