@@ -15,7 +15,7 @@ html {
   }
   
   .body-homepage {
-    background: url("images/Home-2.jpg") no-repeat center center fixed; /* Backgroung from unsplash.com pawel-czerwinski-QRghuf5yTA4-unsplash.jpg*/
+    background: url("images/BG3-about.jpg") no-repeat center center fixed; /* Backgroung from Photo by Karolina Grabowska: https://www.pexels.com/photo/pink-rose-petals-4041287/*/
     background-size: cover;
     height: 100%;
     overflow: hidden;
@@ -27,8 +27,13 @@ html {
     padding-top: 5rem; 
   }
   .video1 video{ /* Snap from Insta Homepage */
-    border: 2px solid #FFB3C1;
+    border: 5px double #FFB3C1;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s; 
+  }
+  .video1 video:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
   }
 
   .video2 video {
@@ -55,10 +60,11 @@ html {
 
   .brand-title a {
     text-decoration: none;
-    color: #FF8FA3;
+    color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 2rem;
   }
   .head-line {
     display: flex;
@@ -143,24 +149,6 @@ html {
     background-color: #FF8FA3;
   }
   
-  .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-  }
-
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-    display: none;
-  }
   .caption-newsletter{
     display: flex;
     flex-direction: column;
@@ -214,11 +202,13 @@ html {
   }
   
   .wrapper-button {
-    display: inline-flex;
-    flex-flow: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
   }
+  .wrapper-button form {
+    display: flex;
+  }
+ 
 
   h4 {
     margin-left: 2rem;
@@ -294,10 +284,6 @@ html {
     padding-bottom: 1rem;
   }
   
-  .submit-button input{
-    margin-left: 1rem;
-  }
-  
   .testimonials-banner {
     display: flex;
     flex-direction: column;
@@ -306,7 +292,7 @@ html {
     padding-bottom: 1rem;
   }
 
-  .testimonials-banner h1 {
+  .testimonials-banner h2 {
     display: flex;
     align-items: center;
     color: white;
@@ -331,6 +317,13 @@ html {
     border-radius: 50%;
     width: 250px;
     height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+  }
+  .item1 img:hover,
+  .item2 img:hover,
+  .item3 img:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
   }
 
   .item1 h3,
@@ -371,7 +364,7 @@ html {
     background-color: #FFB3C1;
   }
 
-  .services-banner h1 {
+  .services-banner h2 {
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -464,17 +457,83 @@ html {
 }
 .price-list caption {
   text-align: center;
-  background-color: #FFB3C1;
   border-radius: 20px;
-  color: white;
+  color: #FF8FA3;
   font-size: 3rem;
   padding: 1rem;
+  text-transform: uppercase;
 }
 
 .contact-content {
   display: flex;
   display: block;
   padding-top: 10px;
+}
+
+.body-about {
+  background: url("images/BG3-about.jpg") no-repeat center center fixed; /* Backgroung from Photo by Karolina Grabowska: https://www.pexels.com/photo/pink-rose-petals-4041287/ */
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.client-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.client-photo img {
+  border-radius: 50%;
+  border: 10px double #FFB3C1;
+}
+
+.profile-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.headline-about h1,
+.headline-about h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin: 1rem;
+}
+.headline-about p {
+  text-align: justify;
+  color: white;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.headline-about b {
+  font-size: 2rem;
+}
+.headline-about p {
+  line-height: 2em;
+}
+.headline-about h1 {
+  font-size: 5rem;
+}
+
+.headline-about h1,
+.headline-about h3 {
+  line-height: 35px;
 }
 /* ===============
      STRUCTURE
