@@ -443,11 +443,13 @@ html {
   text-align: center;
 }
 
-/*.contact-form*/
 .price-list {
   display: flex;
   flex-direction: column;
   padding: 20px 5px;
+}
+.contact-form {
+  padding-bottom: 1rem;
 }
 
 .price-list h2 {
@@ -646,7 +648,7 @@ html {
     }
 /*---------------------------------------------------Media Responsiveness----------------------------------------------------------------*/
 
-@media (max-width: 400px) {
+@media (min-width: 400px) {
     .toggle-button {
       display: flex;
     }
@@ -678,11 +680,44 @@ html {
       display: flex;
     }
 
-    .head-line h1,
-    .head-line h3{
+    .aside-video {
+      display: flex;
+    }
+
+    .flex-container{
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
    }
+   .head-line h1{
+     text-align: center;
+   }
+   .flex-container h1,
+   .flex-container h2,
+   .flex-container h3 {
+    white-space: nowrap;
+   }
+
+   .services-item1,
+   .services-item2,
+   .services-item3{
+     width: 100%;
+   }
+   .services-item1 ul,
+   .services-item2 ul,
+   .services-item3 ul{
+     flex-direction: row;
+     align-items: center;
+   }
+
+   .wrapper-button form {
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+  
+
+   
   }
 
   
