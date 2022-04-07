@@ -273,6 +273,9 @@ html {
     padding-bottom: 1rem;
   }
   .location-info h3 {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
     text-align: center;
     color: #FFB3C1;
     font-size: 2rem;
@@ -290,8 +293,12 @@ html {
   }
 
   .testimonials-banner h1 {
+    display: flex;
+    align-items: center;
+    color: white;
     text-align: center;
     text-transform: uppercase;
+    font-size: 3rem;
   }
  
 
@@ -345,12 +352,18 @@ html {
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
     background-color: #FFB3C1;
   }
 
   .services-banner h1 {
+    color: white;
     text-align: center;
     text-transform: uppercase;
+    display: flex;
+    justify-items: center;
+    font-size: 3rem;
   }
   .services-item1, /* Cards */
   .services-item2,
