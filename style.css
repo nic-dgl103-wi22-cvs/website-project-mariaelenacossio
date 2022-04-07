@@ -715,6 +715,12 @@ html {
      align-items: center;
    }
 
+   .contact-headline h1,
+   .contact-headline h3 {
+    white-space: nowrap;
+   }
+        
+
   }
 
   
